@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getGifs } from "../helpers/getGifs";
 
-const useFetchGifs = (category) => {
+export const useFetchGifs = (category) => {
   const [dataGifs, setDataGifs] = useState([]);
   const [isLoading, setisLoading] = useState(true);
   const getImages = async () => {
